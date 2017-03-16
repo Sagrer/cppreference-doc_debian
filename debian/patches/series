@@ -1,2 +1,3 @@
 01-do-not-distribute-fonts.patch
 02-force-utf8-encoding.patch
+0003-fix-doctype-for-strange-devhelp-unable-to-read-by-no.patch

@@ -1,0 +1,25 @@
+From: Sagrer <sagrer@yandex.ru>
+Date: Thu, 16 Mar 2017 12:08:55 +0300
+Subject: fix-doctype-for-strange-devhelp-unable-to-read-by-noroot
+
+preprocess.xsl: changed DOCTYPE to html from xhtml, trying to fix
+https://bugs.launchpad.net/ubuntu/+source/cppreference-doc/+bug/1668085
+---
+ preprocess.xsl | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/preprocess.xsl b/preprocess.xsl
+index 7137e7d..5dc5d89 100644
+--- a/preprocess.xsl
++++ b/preprocess.xsl
+@@ -23,8 +23,8 @@
+   xmlns:str="http://exslt.org/strings">
+ 
+   <xsl:output
+-    doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"
+-    doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
++    method="html"
++    version="4.01"
+     omit-xml-declaration="yes"
+   />
+ 
