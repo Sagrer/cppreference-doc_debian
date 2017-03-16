@@ -1,4 +1,4 @@
-cppreference-doc (20151129+dfsg0-2) unstable; urgency=low
+cppreference-doc (20151129+dfsg0-2) yakkety; urgency=low
 
   * preprocess.xsl: changed DOCTYPE to html from xhtml, trying to fix
     https://bugs.launchpad.net/ubuntu/+source/cppreference-doc/+bug/1668085
