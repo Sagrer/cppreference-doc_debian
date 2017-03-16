@@ -41,7 +41,7 @@ rel_link = sys.argv[5]
 in_fn = sys.argv[6]
 dest_fn = sys.argv[7]
 
-out_f = open(dest_fn, 'w')
+out_f = open(dest_fn, 'w', encoding='utf-8')
 
 
 class Index2Devhelp(IndexTransform):

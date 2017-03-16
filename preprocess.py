@@ -156,14 +156,14 @@ def rlink_fix(match):
 
 # clean the html files
 for fn in html_files:
-    f = open(fn, "r")
+    f = open(fn, "r", encoding='utf-8')
     text = f.read()
     f.close()
 
     text = r1.sub('', text);
     text = rlink.sub(rlink_fix, text)
 
-    f = open(fn, "w")
+    f = open(fn, "w", encoding='utf-8')
     f.write(text)
     f.close()
 
@@ -176,10 +176,10 @@ for fn in html_files:
 
 # append css modifications
 
-f = open("preprocess-css.css", "r")
+f = open("preprocess-css.css", "r", encoding='utf-8')
 css_app = f.read()
 f.close()
-f = open("output/reference/common/site_modules.css", "a")
+f = open("output/reference/common/site_modules.css", "a", encoding='utf-8')
 f.write(css_app)
 f.close()
 
@@ -187,7 +187,7 @@ f.close()
 
 for fn in [ "output/reference/common/site_modules.css",
             "output/reference/common/ext.css"]:
-    f = open(fn, "r")
+    f = open(fn, "r", encoding='utf-8')
     text = f.read()
     f.close()
 
@@ -199,7 +199,7 @@ for fn in [ "output/reference/common/site_modules.css",
     # QT Help viewer doesn't understand nth-child
     text = text.replace('nth-child(1)', 'first-child')
 
-    f = open(fn, "w")
+    f = open(fn, "w", encoding='utf-8')
     f.write(text)
     f.close()
 
