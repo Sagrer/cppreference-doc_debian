@@ -23,8 +23,8 @@
   xmlns:str="http://exslt.org/strings">
 
   <xsl:output
-    doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"
-    doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+    method="html"
+    version="4.01"
     omit-xml-declaration="yes"
   />
 
